@@ -1,0 +1,249 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(a2a3e6d0-ca4d-4acd-a7ed-086750ab8a37), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@148e1fb, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to C:\dev\bughware\bughware\target\scala-3.1.0\classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:4:96 ------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m4 |[0m[33mtrait[0m [35mWeapon[0m([33mval[0m [36mfireDelay[0m : [35mVector[Double][0m, [33mval[0m [36mcnt[0m : [35mInt[0m, [33mval[0m [36mrecoilPositions[0m : [35mVector[Vector[Vec2D]][0m)[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                                                                                [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |    Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E056] Syntax Error: C:\dev\bughware\bughware\src\main\scala\RecoilHandler.scala:22:20 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m22 |[0m	[33mdef[0m [36mrelativeMove[0m([36mv[0m: [35mVec2D[0m): [35mUnit[0m = [0m
+[0m[[0m[31merror[0m] [0m[0m   |	                    [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |	                    Missing type parameter for bughware.Vec2D[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\RecoilHandler.scala:16:12 ----[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m16 |[0m							relativeMove()[0m
+[0m[[0m[31merror[0m] [0m[0m   |							[31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |missing argument for parameter v of [33mmethod[0m [35mrelativeMove[0m in [33mclass[0m [35mRecoilHandler[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Vec2D.scala:5:65 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m	[33mdef[0m [36mlength[0m([36mthat[0m : [35mVec2D[T][0m) : [35mDouble[0m = Math.sqrt(Math.abs((that.x-x)*(that.x-x))+Math.abs((that.y-y)*(that.y-y)))[0m
+[0m[[0m[31merror[0m] [0m[0m  |	                                                           [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |value - is not a member of T, but could be made available as an extension method.[0m
+[0m[[0m[31merror[0m] [0m[0m  |[0m
+[0m[[0m[31merror[0m] [0m[0m  |One of the following imports might make progress towards fixing the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m  |[0m
+[0m[[0m[31merror[0m] [0m[0m  |  import math.Fractional.Implicits.infixFractionalOps[0m
+[0m[[0m[31merror[0m] [0m[0m  |  import math.Integral.Implicits.infixIntegralOps[0m
+[0m[[0m[31merror[0m] [0m[0m  |  import math.Numeric.Implicits.infixNumericOps[0m
+[0m[[0m[31merror[0m] [0m[0m  |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Vec2D.scala:11:42 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m	[33mdef[0m [36m-[0m([36mthat[0m: [35mVec2D[T][0m): [35mVec2D[T][0m = Vec2D(x - that.x, y - that.y)[0m
+[0m[[0m[31merror[0m] [0m[0m   |	                                        [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value - is not a member of T, but could be made available as an extension method.[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |One of the following imports might make progress towards fixing the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Fractional.Implicits.infixFractionalOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Integral.Implicits.infixIntegralOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Numeric.Implicits.infixNumericOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Vec2D.scala:11:54 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m	[33mdef[0m [36m-[0m([36mthat[0m: [35mVec2D[T][0m): [35mVec2D[T][0m = Vec2D(x - that.x, y - that.y)[0m
+[0m[[0m[31merror[0m] [0m[0m   |	                                                    [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value - is not a member of T, but could be made available as an extension method.[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |One of the following imports might make progress towards fixing the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Fractional.Implicits.infixFractionalOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Integral.Implicits.infixIntegralOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Numeric.Implicits.infixNumericOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Vec2D.scala:12:42 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m	[33mdef[0m [36m+[0m([36mthat[0m: [35mVec2D[T][0m): [35mVec2D[T][0m = Vec2D(x + that.x, y + that.y)[0m
+[0m[[0m[31merror[0m] [0m[0m   |	                                        [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value + is not a member of T, but could be made available as an extension method.[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |One of the following imports might make progress towards fixing the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Fractional.Implicits.infixFractionalOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Integral.Implicits.infixIntegralOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Numeric.Implicits.infixNumericOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Vec2D.scala:12:54 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m	[33mdef[0m [36m+[0m([36mthat[0m: [35mVec2D[T][0m): [35mVec2D[T][0m = Vec2D(x + that.x, y + that.y)[0m
+[0m[[0m[31merror[0m] [0m[0m   |	                                                    [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value + is not a member of T, but could be made available as an extension method.[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |One of the following imports might make progress towards fixing the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Fractional.Implicits.infixFractionalOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Integral.Implicits.infixIntegralOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Numeric.Implicits.infixNumericOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Vec2D.scala:13:42 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m	[33mdef[0m [36m*[0m([36mscalar[0m: [35mDouble[0m): [35mVec2D[T][0m = Vec2D(x * scalar, y * scalar)[0m
+[0m[[0m[31merror[0m] [0m[0m   |	                                        [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value * is not a member of T, but could be made available as an extension method.[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |One of the following imports might make progress towards fixing the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Fractional.Implicits.infixFractionalOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Integral.Implicits.infixIntegralOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Numeric.Implicits.infixNumericOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Vec2D.scala:13:54 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m	[33mdef[0m [36m*[0m([36mscalar[0m: [35mDouble[0m): [35mVec2D[T][0m = Vec2D(x * scalar, y * scalar)[0m
+[0m[[0m[31merror[0m] [0m[0m   |	                                                    [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value * is not a member of T, but could be made available as an extension method.[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |One of the following imports might make progress towards fixing the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Fractional.Implicits.infixFractionalOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Integral.Implicits.infixIntegralOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Numeric.Implicits.infixNumericOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Vec2D.scala:14:42 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m	[33mdef[0m [36m/[0m([36mscalar[0m: [35mDouble[0m): [35mVec2D[T][0m = Vec2D(x / scalar, y / scalar)[0m
+[0m[[0m[31merror[0m] [0m[0m   |	                                        [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value / is not a member of T, but could be made available as an extension method.[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |One of the following imports might make progress towards fixing the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Fractional.Implicits.infixFractionalOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Integral.Implicits.infixIntegralOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Vec2D.scala:14:54 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m	[33mdef[0m [36m/[0m([36mscalar[0m: [35mDouble[0m): [35mVec2D[T][0m = Vec2D(x / scalar, y / scalar)[0m
+[0m[[0m[31merror[0m] [0m[0m   |	                                                    [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value / is not a member of T, but could be made available as an extension method.[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |One of the following imports might make progress towards fixing the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Fractional.Implicits.infixFractionalOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |  import math.Integral.Implicits.infixIntegralOps[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E056] Syntax Error: C:\dev\bughware\bughware\src\main\scala\Vec2D.scala:15:22 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m15 |[0m	[33moverride[0m [33mdef[0m toInt(): Vec2D[0m
+[0m[[0m[31merror[0m] [0m[0m   |	                      [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |	                      Missing type parameter for bughware.Vec2D[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:5:77 ------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m[33mcase class[0m [35mAssaultRifle[0m(  [36mfd[0m : [35mVector[Double][0m, [36mrpm[0m : [35mInt[0m, [36mrp[0m : [35mVector[Vector[Vec2D]][0m) [33mextends[0m [35mWeapon[0m(fd,rpm,rp) [34m//133[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                                                             [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |    Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:6:77 ------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m[33mcase class[0m [35mMP5[0m(           [36mfd[0m : [35mVector[Double][0m, [36mrpm[0m : [35mInt[0m, [36mrp[0m : [35mVector[Vector[Vec2D]][0m) [33mextends[0m [35mWeapon[0m(fd,rpm,rp)  [34m// 120 kanske är fel[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                                                             [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |    Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:7:77 ------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m7 |[0m[33mcase class[0m [35mThompson[0m(      [36mfd[0m : [35mVector[Double][0m, [36mrpm[0m : [35mInt[0m, [36mrp[0m : [35mVector[Vector[Vec2D]][0m) [33mextends[0m [35mWeapon[0m(fd,rpm,rp)  [34m//130[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                                                             [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |    Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:8:77 ------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m8 |[0m[33mcase class[0m [35mCustomSmg[0m(     [36mfd[0m : [35mVector[Double][0m, [36mrpm[0m : [35mInt[0m, [36mrp[0m : [35mVector[Vector[Vec2D]][0m) [33mextends[0m [35mWeapon[0m(fd,rpm,rp)  [34m//100[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                                                             [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |    Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:9:77 ------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m9 |[0m[33mcase class[0m [35mLR300[0m(         [36mfd[0m : [35mVector[Double][0m, [36mrpm[0m : [35mInt[0m, [36mrp[0m : [35mVector[Vector[Vec2D]][0m) [33mextends[0m [35mWeapon[0m(fd,rpm,rp)  [34m//120[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                                                             [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |    Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:10:77 -----------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m[33mcase class[0m [35mM249[0m(          [36mfd[0m : [35mVector[Double][0m, [36mrpm[0m : [35mInt[0m, [36mrp[0m : [35mVector[Vector[Vec2D]][0m) [33mextends[0m [35mWeapon[0m(fd,rpm,rp)  [34m//120[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                             [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |  Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:11:77 -----------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m[33mcase class[0m [35mM39Rifle[0m(      [36mfd[0m : [35mVector[Double][0m, [36mrpm[0m : [35mInt[0m, [36mrp[0m : [35mVector[Vector[Vec2D]][0m) [33mextends[0m [35mWeapon[0m(fd,rpm,rp) [0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                             [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |  Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:12:77 -----------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m[33mcase class[0m [35mM92[0m(           [36mfd[0m : [35mVector[Double][0m, [36mrpm[0m : [35mInt[0m, [36mrp[0m : [35mVector[Vector[Vec2D]][0m) [33mextends[0m [35mWeapon[0m(fd,rpm,rp) [0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                             [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |  Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:13:77 -----------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m[33mcase class[0m [35mPythonRevolver[0m([36mfd[0m : [35mVector[Double][0m, [36mrpm[0m : [35mInt[0m, [36mrp[0m : [35mVector[Vector[Vec2D]][0m) [33mextends[0m [35mWeapon[0m(fd,rpm,rp) [0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                             [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |  Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:14:77 -----------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m[33mcase class[0m [35mRevolver[0m(      [36mfd[0m : [35mVector[Double][0m, [36mrpm[0m : [35mInt[0m, [36mrp[0m : [35mVector[Vector[Vec2D]][0m) [33mextends[0m [35mWeapon[0m(fd,rpm,rp) [0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                             [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |  Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:15:77 -----------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m15 |[0m[33mcase class[0m [35mSemiAutoPistol[0m([36mfd[0m : [35mVector[Double][0m, [36mrpm[0m : [35mInt[0m, [36mrp[0m : [35mVector[Vector[Vec2D]][0m) [33mextends[0m [35mWeapon[0m(fd,rpm,rp) [0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                             [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |  Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:16:77 -----------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m16 |[0m[33mcase class[0m [35mSemiAutoRifle[0m( [36mfd[0m : [35mVector[Double][0m, [36mrpm[0m : [35mInt[0m, [36mrp[0m : [35mVector[Vector[Vec2D]][0m) [33mextends[0m [35mWeapon[0m(fd,rpm,rp) [0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                             [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |  Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:130:44 ----------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m130 |[0m	[33mdef[0m [36mgetTimes[0m([36mrpm[0m : [35mInt[0m, [36mviewAngles[0m : [35mVector[Vec2D][0m) : [35mVector[Double][0m =[0m
+[0m[[0m[31merror[0m] [0m[0m    |	                                            [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:108:80 ----------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m108 |[0m	[33mdef[0m [36mrecoilVec[0m([36msensitivity[0m : [35mDouble[0m, [36mfov[0m : [35mDouble[0m, [36mrpm[0m: [35mInt[0m, [36mviewAngles[0m : [35mVector[Vec2D][0m) : [35mVector[Vector[Vec2D]][0m =[0m
+[0m[[0m[31merror[0m] [0m[0m    |	                                                                                [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:108:104 ---------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m108 |[0m	[33mdef[0m [36mrecoilVec[0m([36msensitivity[0m : [35mDouble[0m, [36mfov[0m : [35mDouble[0m, [36mrpm[0m: [35mInt[0m, [36mviewAngles[0m : [35mVector[Vec2D][0m) : [35mVector[Vector[Vec2D]][0m =[0m
+[0m[[0m[31merror[0m] [0m[0m    |	                                                                                                        [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:110:27 ----------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m110 |[0m			[33mval[0m [36mres[0m = [33mnew[0m [35mArray[Vector[Vec2D]][0m(viewAngles.length)[0m
+[0m[[0m[31merror[0m] [0m[0m    |			                           [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:112:21 ----------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m112 |[0m				[33mval[0m [36mtemp[0m = [33mnew[0m [35mArray[Vec2D][0m([31m2[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m    |				                     [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:120:31 ----------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m120 |[0m	[33mdef[0m [36mmoveCalc[0m([36mvc[0m: [35mVector[Vector[Vec2D]][0m): [35mVector[Vec2D][0m =[0m
+[0m[[0m[31merror[0m] [0m[0m    |	                               [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:120:48 ----------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m120 |[0m	[33mdef[0m [36mmoveCalc[0m([36mvc[0m: [35mVector[Vector[Vec2D]][0m): [35mVector[Vec2D][0m =[0m
+[0m[[0m[31merror[0m] [0m[0m    |	                                                [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |Type argument bughware.Vec2D does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:122:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m122 |[0m		[33mfor[0m i <- [31m0[0m until gun1.recoilPositions.length [33mdo[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |		                 [31m^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |		                 Not found: gun1[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:123:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m123 |[0m			[33mfor[0m j <- [31m0[0m until gun1.cnt [33mdo[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |			                 [31m^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |			                 Not found: gun1[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:124:20 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m124 |[0m				[33mif[0m cursor != cursor + gun.recoilPositions(i)([31m1[0m) [33mthen[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |				             [31m^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value + is not a member of object bughware.Vec2D, but could be made available as an extension method.[0m
+[0m[[0m[31merror[0m] [0m[0m    |[0m
+[0m[[0m[31merror[0m] [0m[0m    |One of the following imports might make progress towards fixing the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m    |[0m
+[0m[[0m[31merror[0m] [0m[0m    |  import math.Fractional.Implicits.infixFractionalOps[0m
+[0m[[0m[31merror[0m] [0m[0m    |  import math.Integral.Implicits.infixIntegralOps[0m
+[0m[[0m[31merror[0m] [0m[0m    |  import math.Numeric.Implicits.infixNumericOps[0m
+[0m[[0m[31merror[0m] [0m[0m    |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:124:22 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m124 |[0m				[33mif[0m cursor != cursor + gun.recoilPositions(i)([31m1[0m) [33mthen[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |				                      [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |				                      Not found: gun[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:125:16 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m125 |[0m				cursor = cursor + gun1.recoilPositions(i)([31m1[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m    |				         [31m^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value + is not a member of object bughware.Vec2D, but could be made available as an extension method.[0m
+[0m[[0m[31merror[0m] [0m[0m    |[0m
+[0m[[0m[31merror[0m] [0m[0m    |One of the following imports might make progress towards fixing the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m    |[0m
+[0m[[0m[31merror[0m] [0m[0m    |  import math.Fractional.Implicits.infixFractionalOps[0m
+[0m[[0m[31merror[0m] [0m[0m    |  import math.Integral.Implicits.infixIntegralOps[0m
+[0m[[0m[31merror[0m] [0m[0m    |  import math.Numeric.Implicits.infixNumericOps[0m
+[0m[[0m[31merror[0m] [0m[0m    |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:125:18 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m125 |[0m				cursor = cursor + gun1.recoilPositions(i)([31m1[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m    |				                  [31m^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |				                  Not found: gun1[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:127:0 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m127 |[0m				setPixel(cursor1.x.toInt, cursor1.y.toInt, java.awt.Color.red)[0m
+[0m[[0m[31merror[0m] [0m[0m    |				[31m^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |				Not found: setPixel[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:127:9 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m127 |[0m				setPixel(cursor1.x.toInt, cursor1.y.toInt, java.awt.Color.red)[0m
+[0m[[0m[31merror[0m] [0m[0m    |				         [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |				         Not found: cursor1[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\dev\bughware\bughware\src\main\scala\Weapon.scala:127:26 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m127 |[0m				setPixel(cursor1.x.toInt, cursor1.y.toInt, java.awt.Color.red)[0m
+[0m[[0m[31merror[0m] [0m[0m    |				                          [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |				                          Not found: cursor1[0m
+[0m[[0m[31merror[0m] [0m[0m41 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m41 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 12 s, completed 2021-dec-10 15:49:44[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
